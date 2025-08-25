@@ -1,6 +1,6 @@
 ---
 name: evcc
-version: 0.207.4
+version: 0.200.4
 slug: evcc
 description: EV Charge Controller!
 url: https://github.com/evcc-io/evcc
@@ -20,7 +20,7 @@ ingress: true
 ingress_port: 7070
 init: false
 watchdog: http://[HOST]:[PORT:7070]/api/health
-image: evcc/evcc
+image: wolfmarcel/evcc-alfen
 options: 
   config_file: /config/evcc.yaml
   sqlite_file: /data/evcc.db
